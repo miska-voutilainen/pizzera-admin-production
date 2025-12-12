@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://pizzeria-api.azurewebsites.net/api",
   withCredentials: true,
 });
 

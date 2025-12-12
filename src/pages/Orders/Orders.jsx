@@ -13,7 +13,7 @@ export default function Orders() {
 
   const loadOrders = async () => {
     try {
-      const r = await api.get("/api/admin/orders");
+      const r = await api.get("/admin/orders");
       const usersRes = await api.get("/admin/users");
       const userMap = {};
       usersRes.data.forEach((user) => {
