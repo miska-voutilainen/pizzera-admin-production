@@ -89,7 +89,7 @@ export default function Products() {
         category: form.category,
         sort_order: form.sort_order,
       };
-      const response = await api.post("/products", productData);
+      const response = await api.post("/api/products", productData);
       alert(`Product added successfully! ID: ${response.data.id}`);
       setForm({
         id: "",
